@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+.ttcn {font-size: 25px;margin: 9px 0;}
+input[type=text]:focus {
+  background-color: aqua;
+}
+input[type=text]{
+  padding: 5px 30px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+*{font-family:Times New Roman;background:lightblue;margin-left: 15px}
+h2 {font-size: 25px;font-weight: bold;color: darkgreen}
+#submit-form {font-weight: semi-bold;color:red;font-size:20px;margin-left:40px}  
+.inp {font-size: 18px;color:green;} 
+</style>
+</head>
+<body>
+<form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbx3RebtB7hGZY6I0ghANsKTzMQmauZY8LEmQLx6WGZEAae7myERTyRyyE6wsLk3ChcgOg/exec">
+    <script type="text/javascript">
+    document.getElementById("test-form").onchange = function(){
+    var n1 = 0;n2 = 0;n3 = 0;n4 = 0;n5 = 0;n6 = 0;n7 = 0;n8 = 0;n9 = 0;kq = 0;
+              var checkbox = document.getElementsById('nn');
+              for (var i = 0; i < checkbox.length; i++){
+                    if (checkbox[i].checked === true){
+             switch (checkbox[i].value){
+                            case "1a": {n1++;
+                            break;
+                        }
+                            case "1b": {n2++;
+                            break;
+                        }
+                            case "1c": {n3++;
+                            break;
+                        } 
+                            case "1d": {n4++;
+                            break;
+                        }
+                            case "1e": {n5++;
+                            break;
+                        }
+                            case "1f": {n6++;
+                            break;
+                        }                           
+                            case "1h": {n7++;
+                            break;
+                        }
+                            case "1i": {n8++;
+                            break;
+                        }
+                            case "1k": {n9++;
+                            break;
+                        }
+                    }
+                }
+            }
+var kq = Math.max(n1,n2,n3,n4,n5,n6,n7,n8,n9);
+document.getElementById("ketq").value = kq;
+}
+</script>
+
+<div class='ttcn'>
+<input type="text" name="Họ và tên" placeholder="Họ và tên" required="required"/><br>
+<input type="text" name="Lớp" placeholder="Lớp" required="required"/><br>
+<input type="text" name="Trường" placeholder="Trường" required="required"/><br>
+</div>
+
+<h2>Bạn muốn chọn hướng học tập hoặc hoạt động nào sau khi tốt nghiệp hoặc kết thúc lớp đang học</h2>
+<div class='inp'>
+<div class='C1'>
+<input type="radio" name="Câu 1" value='Đại học'/>Thi vào các trường đại học<br>
+<input type="radio" name="Câu 1" value='Trung cấp'/>Thi vào các trường trung cấp<br>
+<input type="radio" name="Câu 1" value='Học nghề'/>Học nghề<br>
+<input type="radio" name="Câu 1" value='Du học' required="required"/>Sang nước ngoài học tập/làm việc<br>
+</div>
+</div>
+
+<h2>Bạn thích nhóm nghề nào nhất</h2>
+<div class='inp'>
+<div class='C2'>
+<input id ='nn' type="radio" name="Câu 2" value='1a'/>Nhóm ngành sản xuất và chế biến<br>
+<input id ='nn' type="radio" name="Câu 2" value='1b'/>Nhóm ngành kiến trúc và xây dựng<br>
+<input id ='nn' type="radio" name="Câu 2" value='1c'/>Nhóm ngành kinh doanh<br>
+<input id ='nn' type="radio" name="Câu 2" value='1d'/>Nhóm ngành công nghệ thông tin<br>
+<input id ='nn' type="radio" name="Câu 2" value="1e"/>Nhóm ngành luật - nhân văn<br>
+<input id ='nn' type="radio" name="Câu 2" value="1f"/>Nhóm ngành nghệ thuật-thẩm mĩ-đồ họa<br>
+<input id ='nn' type="radio" name="Câu 2" value="1g"/>Nhóm ngành báo chí- khoa học và xã hội<br>
+<input id ='nn' type="radio" name="Câu 2" value="1h"/>Nhóm ngành khoa học cơ bản<br>
+<input id ='nn' type="radio" name="Câu 2" value="1i"/>Nhóm ngành sư phạm<br>
+<input id ='nn' type="radio" name="Câu 2" value="1k" required="required"/>Nhóm ngành nông-lâm-ngư nghiệp<br>
+</div>
+</div>
+
+
+<h2>Nguyên nhân để bạn chọn nghề trên</h2>
+<div class='inp'>
+<div class='C3'>
+<input type="radio" name="Câu 3" value='Bản thân'/>Tự nhận thấy khả năng bản thân<br>
+<input type="radio" name="Câu 3" value='Khkt'/>Con đường phát triển khoa học kỹ thuật<br>
+<input type="radio" name="Câu 3" value='Kinh tế'/>Có thể cải thiện đời sống<br>
+<input type="radio" name="Câu 3" value='Du lịch'/>Có điều kiện đi nhiều nơi<br>
+<input type="radio" name="Câu 3" value='Cống hiến' required="required"/>Cống hiến cho xã hội<br>
+</div>
+</div>
+
+<h2>Ai đã ảnh hưởng đến bạn nhiều nhất trong việc lựa chọn nghề tương lai</h2>
+<div class='inp'>
+<div class='C4'>
+<input type="radio" name="Câu 4" value='Bản thân'/>Bản thân<br>
+<input type="radio" name="Câu 4" value='Người thân'/>Người thân<br>
+<input type="radio" name="Câu 4" value='Thầy cô'/>Thầy cô<br>
+<input type="radio" name="Câu 4" value='Người ngoài' required="required"/>Người ngoài<br>
+</div>
+</div>
+<input type='hidden' name="Kết quả" id='ketq'>
+<br><button type="submit" id="submit-form">Gửi</button>
+</form>
+
+</body>
+</html>
