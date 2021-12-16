@@ -2,65 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<style type="text/css">
-.ttcn {font-size: 25px;margin: 9px 0;}
-input[type=text]:focus {
-  background-color: aqua;
-}
-input[type=text]{
-  padding: 5px 30px;
-  margin: 4px 0;
-  box-sizing: border-box;
-}
-*{font-family:Times New Roman;background:lightblue;margin-left: 15px}
-h2 {font-size: 25px;font-weight: bold;color: darkgreen}
-#submit-form {font-weight: semi-bold;color:red;font-size:20px;margin-left:40px}  
-.inp {font-size: 18px;color:green;} 
-</style>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script language="javascript" src="js.js"></script>
 </head>
 <body>
 <form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbx3RebtB7hGZY6I0ghANsKTzMQmauZY8LEmQLx6WGZEAae7myERTyRyyE6wsLk3ChcgOg/exec">
-    <script type="text/javascript">
-    document.getElementById("test-form").onchange = function(){
-    var n1 = 0;n2 = 0;n3 = 0;n4 = 0;n5 = 0;n6 = 0;n7 = 0;n8 = 0;n9 = 0;kq = 0;
-              var checkbox = document.getElementsById('nn');
-              for (var i = 0; i < checkbox.length; i++){
-                    if (checkbox[i].checked === true){
-             switch (checkbox[i].value){
-                            case "1a": {n1++;
-                            break;
-                        }
-                            case "1b": {n2++;
-                            break;
-                        }
-                            case "1c": {n3++;
-                            break;
-                        } 
-                            case "1d": {n4++;
-                            break;
-                        }
-                            case "1e": {n5++;
-                            break;
-                        }
-                            case "1f": {n6++;
-                            break;
-                        }                           
-                            case "1h": {n7++;
-                            break;
-                        }
-                            case "1i": {n8++;
-                            break;
-                        }
-                            case "1k": {n9++;
-                            break;
-                        }
-                    }
-                }
-            }
-var kq = Math.max(n1,n2,n3,n4,n5,n6,n7,n8,n9);
-document.getElementById("ketq").value = kq;
-}
-</script>
 
 <div class='ttcn'>
 <input type="text" name="Họ và tên" placeholder="Họ và tên" required="required"/><br>
