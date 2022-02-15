@@ -1,0 +1,136 @@
+*{
+  background: lightblue;
+  font-family: Arial;
+  border-collapse: collapse;
+  text-indent:10px;
+  margin-top:0px;
+}
+body{
+  margin:0;
+  pading:0;
+}
+#menu .pos{
+  background: white;
+  color: black;
+}
+.container{
+  display:none;
+}
+#menu {
+  display:block;
+}
+  .container {
+            cursor: pointer;
+            position:fixed;
+            margin:0 0;
+            padding-left:6px;
+            padding-right:6px;
+            background:red;
+            display:block;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.5s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+li a{
+  display:block;
+}
+#menu ul li{
+display:block;
+}
+#menu ul{
+list-style-type:none;
+padding:0px;
+margin:0px;
+margin: 0;
+padding: 0;
+width:220px;
+background-color: #e9d8f4;
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+#menu{
+  line-height:200%;
+  display:none;
+}
+#menu ul a{
+text-decoration:none;
+background:#1F568B;
+color:#fff;
+width:100%;
+float:none;
+border-bottom:1px solid white;
+font-weight:bold;
+text-align:center;
+transition:0.5s;
+}
+#menu a:hover {
+  background: #F1F1F1;
+  color: #333;
+}  
+td, th{
+    border: 1px solid;
+    text-align: left;
+  }
+h3{
+  display:inline-block;
+  font-size:21px;
+  color:green;
+}
+p,dt,dl,h5{
+  font-size:19px;
+}
+th{
+  text-align:center;
+}
+img{
+  margin-left:30%;
+  max-width:100%;
+}
+summary:hover{
+  background:white;
+  color:black;
+}
+summary{
+  border-top:2px solid white;
+  font-weight:bold;
+  font-size:22px;
+  color:white;
+  margin-bottom:20px;
+  background:black;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-top:10px;
+  transition:0.5s;
+  cursor: pointer;
+}
+summary:active{
+  background:cyan;
+  color:white;
+}
+p,dl{
+  margin-left:1%;
+}
+
