@@ -33,7 +33,7 @@
 <h1>
   Bạn hãy đánh giá chất lượng bài test
   </h1>
-<form id="google-form" onsubmit="return sendForm();" method="GET" action="https://script.google.com/macros/s/AKfycbyc-624s7zUktzUJltqXq2hLgGjNxX8p6tjYXcQxTs7N1N0U45NwodEHnGj9DxTjfTB/exec">
+<form id="google-form" onsubmit="return sendForm();" method="GET" action="https://script.google.com/macros/s/AKfycbwJuvpYoxwoY4EI3jp7wL7DpqbM_zSh0Ypp8XE4p6G1xJCHpzsnMZvh4D-rX3ziLznJ/exec">
 <p class="name">
   Tên của bạn:
   <input type="text" name="Tên" placeholder="VD: Nguyễn Văn A">
@@ -92,7 +92,7 @@
     let data = $('#google-form').serialize();
 
     $.ajax({ 
-        url: 'https://script.google.com/macros/s/AKfycbyc-624s7zUktzUJltqXq2hLgGjNxX8p6tjYXcQxTs7N1N0U45NwodEHnGj9DxTjfTB/exec',
+        url: 'https://script.google.com/macros/s/AKfycbwJuvpYoxwoY4EI3jp7wL7DpqbM_zSh0Ypp8XE4p6G1xJCHpzsnMZvh4D-rX3ziLznJ/exec',
         method: 'GET',
         dataType: 'json',
         data: data,
@@ -103,7 +103,6 @@
         }
     });
 
-    window.jQuery(this).trigger('reset');
 
 var modal = document.getElementById("myModal");
   modal.style.display = "block"; 
