@@ -7,10 +7,38 @@
 <script src="test.js"></script>
 </head>
 <body>
+<div id="menu">
+ <ul>
+<input type="text" id="mySearch" onkeyup="Function()" placeholder="Search..">
+  <li><a href="index.html">Cơ sở lý thuyết</a></li>
+
+ <li><a class="pos" href="html1.html">Test chẩn đoán - khác biệt</a></li>
+ <li><a href="html2.html">Test khí chất</a></li>
+ <li><a href="html3.html">Test hứng thú</a></li>
+   <li><a href="html4.html">Test sự phù hợp nghề</a></li>
+    <li><a href="ttts.html">Thông tin tuyển sinh</a></li>
+ <li><a href="http://thidanhgianangluc.edu.vn/?fbclid=IwAR0cw3XX6zJNSpmuF6yuqyamC8Nb4WTzg22AVl2Lx0--z7nCNM_EQn6ipTw">Kì thi đánh giá năng lực</a></li>
+  <li><a href="https://thongtintuyensinh.vn/Tim-truong-theo-cac-nhom-nganh-dao-tao-trinh-do-dai-hoc_C128_D14907.htm">Tuyển sinh theo nhóm ngành</a></li>
+<li><a href="https://thongtintuyensinh.vn/Gioi-thieu-mot-so-nganh-nghe-trong-xa-hoi_C217_D4955.htm">Các ngành nghề</a></li>
+<li><a href="https://thongtintuyensinh.vn/Danh-muc-cac-nganh-nghe-dao-tao_C253_D6515.htm">Danh mục nghề</a></li>
+<li><a href="https://thongtintuyensinh.vn/Chuong-trinh-Quoc-te_C123.htm">Chương trình quốc tế</a></li>
+ </ul>
+</div>
+<div id="mbody">
+  <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 <h1>
   Bạn hãy đánh giá chất lượng bài test
   </h1>
 <form id="google-form" onsubmit="return sendForm();">
+<p class="name">
+  Tên của bạn:
+  <input type="text" name="Tên" placeholder="VD: Nguyễn Văn A">
+</p>
+<br>
 <div id="rating">
     <input type="radio" id="star5" name="Đánh giá" value="5" />
     <label class = "full" for="star5" title="Awesome - 5 stars"></label>
@@ -44,8 +72,23 @@
 </div> 
   <br><br>
  <input type="text" class="cmt" name="Phản hồi" placeholder="Góp ý">
- <br><button type="submit" class="button" id="submit-form">Submit</button>
-  </form>
+ <br><br><button type="submit" class="button" id="submit-form">Gửi</button>
+  </form></div>
+  <div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h4>Đánh giá thành công</h4>
+    </div>
+    <div class="modal-body">
+      <p>Cảm ơn bạn đã tham gia đánh giá</p>
+      <p>Chúng tôi sẽ thu nhận phản hồi và sẽ sớm cải thiện trong tương lai</p>
+    </div>
+    <div class="modal-footer">
+      <h4>Modal Footer</h4>
+    </div>
+  </div>
+  </div>
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript">
     function sendForm() {
@@ -64,7 +107,20 @@
     });
 
     window.jQuery(this).trigger('reset');
-    alert('Thành công');
+var modal = document.getElementById("myModal");
+  modal.style.display = "block"; 
+      
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
     return true;
 };</script>
