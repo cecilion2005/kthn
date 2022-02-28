@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Khắc phục tình trạng mất phương hướng</title>
+<link rel="stylesheet" type="text/css" href="test.css"> 
+<script src="test.js"></script>
+</head>
+<body>
+<h1>
+  Bạn hãy đánh giá chất lượng bài test
+  </h1>
+<form id="google-form" onsubmit="return sendForm();">
+<div id="rating">
+    <input type="radio" id="star5" name="Đánh giá" value="5" />
+    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    
+    <input type="radio" id="star4half" name="Đánh giá" value="4.5" />
+    <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    
+    <input type="radio" id="star4" name="Đánh giá" value="4" />
+    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    
+    <input type="radio" id="star3half" name="Đánh giá" value="3.5" />
+    <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    
+    <input type="radio" id="star3" name="Đánh giá" value="3" />
+    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+    
+    <input type="radio" id="star2half" name="Đánh giá" value="2.5" />
+    <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    
+    <input type="radio" id="star2" name="Đánh giá" value="2" />
+    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    
+    <input type="radio" id="star1half" name="Đánh giá" value="1.5" />
+    <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    
+    <input type="radio" id="star1" name="Đánh giá" value="1" />
+    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    
+    <input type="radio" id="starhalf" name="Đánh giá" value="0.5" />
+    <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</div> 
+  <br><br>
+ <input type="text" class="cmt" name="Phản hồi" placeholder="Góp ý">
+ <br><button type="submit" class="button" id="submit-form">Submit</button>
+  </form>
+    <script type="text/javascript">
+    function sendForm() {
+    let data = $('#google-form').serialize();
+
+    $.ajax({ 
+        url: 'https://script.google.com/macros/s/AKfycbyc-624s7zUktzUJltqXq2hLgGjNxX8p6tjYXcQxTs7N1N0U45NwodEHnGj9DxTjfTB/exec',
+        method: 'GET',
+        dataType: 'json',
+        data: data,
+        success: function(responseData, textStatus, jqXHR) {
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log(errorThrown);
+        }
+    });
+
+    window.jQuery(this).trigger('reset');
+    alert('Thành công');
+
+    return true;
+};</script>
+  </body>
+</html>
