@@ -3,26 +3,26 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>Khắc phục tình trạng mất phương hướng</title>
-<link rel="stylesheet" type="text/css" href="test.css"> 
-<script src="test.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<script src="script.js"></script>
 </head>
 <body>
 <div id="menu">
  <ul>
 <input type="text" id="mySearch" onkeyup="Function()" placeholder="Search..">
-  <li><a href="index.html">Cơ sở lý thuyết</a></li>
-
- <li><a class="pos" href="html1.html">Test chẩn đoán - khác biệt</a></li>
- <li><a href="html2.html">Test khí chất</a></li>
- <li><a href="html3.html">Test hứng thú</a></li>
-   <li><a href="html4.html">Test sự phù hợp nghề</a></li>
-    <li><a href="ttts.html">Thông tin tuyển sinh</a></li>
- <li><a href="http://thidanhgianangluc.edu.vn/?fbclid=IwAR0cw3XX6zJNSpmuF6yuqyamC8Nb4WTzg22AVl2Lx0--z7nCNM_EQn6ipTw">Kì thi đánh giá năng lực</a></li>
-  <li><a href="https://thongtintuyensinh.vn/Tim-truong-theo-cac-nhom-nganh-dao-tao-trinh-do-dai-hoc_C128_D14907.htm">Tuyển sinh theo nhóm ngành</a></li>
+ <li><a class="pos" href="index.html">Cơ sở lý thuyết</a></li>
+<li><a href="html1.html">Test chẩn đoán - khác biệt</a></li>
+<li><a href="html2.html">Test khí chất</a></li>
+<li><a href="html3.html">Test hứng thú</a></li>
+<li><a href="html4.html">Test sự phù hợp nghề</a></li>
+<li><a href="ttts.html">Tuyển sinh miền Bắc</a></li>
+<li><a href="tttst.html">Tuyển sinh miền Trung</a></li>
+<li><a href="tttsn.html">Tuyển sinh miền Nam</a></li>
+<li><a href="http://thidanhgianangluc.edu.vn/?fbclid=IwAR0cw3XX6zJNSpmuF6yuqyamC8Nb4WTzg22AVl2Lx0--z7nCNM_EQn6ipTw">Kì thi đánh giá năng lực</a></li>
+<li><a href="https://thongtintuyensinh.vn/Tim-truong-theo-cac-nhom-nganh-dao-tao-trinh-do-dai-hoc_C128_D14907.htm">Tuyển sinh theo nhóm ngành</a></li>
 <li><a href="https://thongtintuyensinh.vn/Gioi-thieu-mot-so-nganh-nghe-trong-xa-hoi_C217_D4955.htm">Các ngành nghề</a></li>
 <li><a href="https://thongtintuyensinh.vn/Danh-muc-cac-nganh-nghe-dao-tao_C253_D6515.htm">Danh mục nghề</a></li>
-<li><a href="https://thongtintuyensinh.vn/Chuong-trinh-Quoc-te_C123.htm">Chương trình quốc tế</a></li>
- </ul>
+<li><a href="https://thongtintuyensinh.vn/Chuong-trinh-Quoc-te_C123.htm">Chương trình quốc tế</a></li> </ul>
 </div>
 <div id="mbody">
   <div class="container" onclick="myFunction(this)">
@@ -33,7 +33,7 @@
 <h1>
   Bạn hãy đánh giá chất lượng bài test
   </h1>
-<form id="google-form" onsubmit="return sendForm();" method="GET" action="https://script.google.com/macros/s/AKfycbwJuvpYoxwoY4EI3jp7wL7DpqbM_zSh0Ypp8XE4p6G1xJCHpzsnMZvh4D-rX3ziLznJ/exec">
+<form id="google-form" onsubmit="return sendForm();">
 <p class="name">
   Tên của bạn:
   <input type="text" name="Tên" placeholder="VD: Nguyễn Văn A">
@@ -92,7 +92,7 @@
     let data = $('#google-form').serialize();
 
     $.ajax({ 
-        url: 'https://script.google.com/macros/s/AKfycbwJuvpYoxwoY4EI3jp7wL7DpqbM_zSh0Ypp8XE4p6G1xJCHpzsnMZvh4D-rX3ziLznJ/exec',
+        url: 'https://script.google.com/macros/s/AKfycbxz5Mrek6XmuXxl-The-idISOWdY2HGcl2ZVeu-XH-YCds-jUyGW3EtiToy5WiDxa4F/exec',
         method: 'GET',
         dataType: 'json',
         data: data,
@@ -102,8 +102,6 @@
             console.log(errorThrown);
         }
     });
-
-
 var modal = document.getElementById("myModal");
   modal.style.display = "block"; 
       
@@ -118,8 +116,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-    return true;
+return true;
 };</script>
   </body>
 </html>
