@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trắc nghiệm khí chất của Eysenck</title>
+<link rel="shortcut icon" href="title.jpg"/>
+<link rel="stylesheet" href="css2.css" />
+<script src="script.js"></script>
+</head>
+<body>
+<div id="menu">
+ <ul>
+<input type="text" id="mySearch" onkeyup="Function()" placeholder="Search..">
+<li><a href="index.html">Cơ sở lý thuyết</a></li>
+<li><a href="html1.html">Test chẩn đoán - khác biệt</a></li>
+<li><a class="pos" href="html2.html">Test khí chất</a></li>
+<li><a href="html3.html">Test hứng thú</a></li>
+<li><a href="html4.html">Test sự phù hợp nghề</a></li>
+<li><a href="ttts.html">Tuyển sinh miền Bắc</a></li>
+<li><a href="tttst.html">Tuyển sinh miền Trung</a></li>
+<li><a href="tttsn.html">Tuyển sinh miền Nam</a></li>
+<li><a href="http://thidanhgianangluc.edu.vn/?fbclid=IwAR0cw3XX6zJNSpmuF6yuqyamC8Nb4WTzg22AVl2Lx0--z7nCNM_EQn6ipTw">Kì thi đánh giá năng lực</a></li>
+<li><a href="https://thongtintuyensinh.vn/Tim-truong-theo-cac-nhom-nganh-dao-tao-trinh-do-dai-hoc_C128_D14907.htm">Tuyển sinh theo nhóm ngành</a></li>
+<li><a href="https://thongtintuyensinh.vn/Gioi-thieu-mot-so-nganh-nghe-trong-xa-hoi_C217_D4955.htm">Các ngành nghề</a></li>
+<li><a href="https://thongtintuyensinh.vn/Danh-muc-cac-nganh-nghe-dao-tao_C253_D6515.htm">Danh mục nghề</a></li>
+<li><a href="https://thongtintuyensinh.vn/Chuong-trinh-Quoc-te_C123.htm">Chương trình quốc tế</a></li>
+ </ul>
+</div>
+  <div id="mbody">
+  <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+ <form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbxDfnmNsXlGUDFMUyjHC_mKA__ima7MnzTFhJE8ZhE-lGZ1S2u6LwGcXG7TBfQqCZh4jA/exec">
+    <h1>
+      Khảo sát trắc nghiệm khí chất của Eysenck
+   </h1>
+   <h2>Hãy tích vào ô trả lời tương ứng</h2>
+<table border="0" cellspacing="0" cellpadding="6">
+        <tr>
+            <th rowspan="2" class="title"></th>
+        </tr>
+        <tr>
+            <th align="center">Có</th>
+            <th align="center">Không</th>
+        </tr>
+        <tr>
+            <td align="center">Bạn thường mong chờ những điều mới lạ gây hồi hộp</td>
+            <td align="center"><input type="radio" name="Câu 1" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 1" value="-1" required="required"></td>
+        </tr>
+        <tr>
+            <td align="center">Bạn cần những người bạn có thể hiểu, động viên, an ủi mình ?</td>
+            <td align="center"><input type="radio" name="Câu 2" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 2" value="-1" required="required"></td>
+        </tr>
+        <tr>
+            <td align="center">Bạn là một người vô tâm ?</td>
+            <td align="center"><input type="radio" name="Câu 3" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 3" value="-1" required="required"></td>
+        </tr>
+    
+        <tr>
+            <td align="center">Bạn cảm thấy khó khăn khi phải từ chối 1 điều gì ?</td>
+            <td align="center"><input type="radio" name="Câu 4" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 4" value="-1" required="required"></td>
+        </tr>
+    
+        <tr>
+            <td align="center">Bạn có suy nghĩ kĩ trước khi quyết định 1 việc nào đó ?</td>
+            <td align="center"><input type="radio" name="Câu 5" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 5" value="-1" required="required"></td>
+        </tr>
+        
+        <tr>
+            <td align="center">Bạn luôn giữ lời hứa, bất kể điều đó thuận lợi hay không ?</td>
+            <td align="center"><input type="radio" name="Câu 6" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 6" value="-1" required="required"></td>
+        </tr>
+        
+        <tr>
+            <td align="center">Tâm trạng của bạn có hay bị thất thường không ?</td>
+            <td align="center"><input type="radio" name="Câu 7" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 7" value="-1" required="required"></td>
+        </tr>
+    
+        <tr>
+            <td align="center">Bạn thường phát ngôn rất nhanh không cần phải suy nghĩ ?</td>
+            <td align="center"><input type="radio" name="Câu 8" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 8" value="-1" required="required"></td>
+        </tr>
+    
+        <tr>
+            <td align="center">Bạn thường cảm thân mình bất hạnh mà không rõ nguyên nhân ?</td>
+            <td align="center"><input type="radio" name="Câu 9" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 9" value="-1" required="required"></td>
+        </tr>
+    
+        <tr>
+            <td align="center">Bạn có bảo vệ ý kiến của mình đến cùng trong các buổi tranh luận ?</td>
+            <td align="center"><input type="radio" name="Câu 10" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 10" value="-1" required="required"></td>
+        </tr>
+        
+        <tr>
+            <td align="center">Bạn thường cảm thấy ngại ngùng và rụt rè khi nói chuyện với người khác giới không quen ?</td>
+            <td align="center"><input type="radio" name="Câu 11" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 11" value="-1" required="required"></td>
+        </tr>
+        
+        <tr>
+            <td align="center">Đôi lúc bạn không kiềm chế được và nổi nóng ?</td>
+            <td align="center"><input type="radio" name="Câu 12" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 12" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thường hành động một cách nóng vội ?</td>
+            <td align="center"><input type="radio" name="Câu 13" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 13" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thường day dứt về một việc mà lẽ ra không nên làm ?</td>
+            <td align="center"><input type="radio" name="Câu 14" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 14" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thường thích đọc sách hơn là gặp gỡ với mọi người ?</td>
+            <td align="center"><input type="radio" name="Câu 15" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 15" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có dễ phật ý không ?</td>
+            <td align="center"><input type="radio" name="Câu 16" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 16" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thích hội nhập với bạn bè ?</td>
+            <td align="center"><input type="radio" name="Câu 17" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 17" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Thỉnh thoảng có những ý nghĩ mà bạn dấu không cho người khác biết ?</td>
+            <td align="center"><input type="radio" name="Câu 18" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 18" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Đôi khi bạn cảm thấy bạn đày nghị lực, nhiệt tình để làm mọi việc nhưng có lúc lại hoàn toàn uể oải ?</td>
+            <td align="center"><input type="radio" name="Câu 19" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 19" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có thích thà ít bạn nhưng là bạn thân ?</td>
+            <td align="center"><input type="radio" name="Câu 20" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 20" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có hay mơ ước không ?</td>
+            <td align="center"><input type="radio" name="Câu 21" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 21" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn phản ứng lại ngay khi người ta nói nặng lời với bạn</td>
+            <td align="center"><input type="radio" name="Câu 22" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 22" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thường day dứt khi thấy mình có lỗi ?</td>
+            <td align="center"><input type="radio" name="Câu 23" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 23" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Tất cả những thói quen của bạn đều là tốt và cần thiết ?</td>
+            <td align="center"><input type="radio" name="Câu 24" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 24" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn là người có khả năng truyền cảm hứng và làm hài lòng mọi người trong đám bạn ?</td>
+            <td align="center"><input type="radio" name="Câu 25" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 25" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn là một người nhạy cảm ?</td>
+            <td align="center"><input type="radio" name="Câu 26" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 26" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn là một người hoạt bát vui vẻ ?</td>
+            <td align="center"><input type="radio" name="Câu 27" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 27" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Sau khi làm một việc nào đó bạn thường có cảm giác lẽ ra mình có thể làm tốt hơn ?</td>
+            <td align="center"><input type="radio" name="Câu 28" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 28" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thường im lặng ở nơi có người lạ ?</td>
+            <td align="center"><input type="radio" name="Câu 29" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 29" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn cũng có lúc phao tin, đưa chuyện ?</td>
+            <td align="center"><input type="radio" name="Câu 30" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 30" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thường mất ngủ vì những ý kiến khác nhau trong đầu ?</td>
+            <td align="center"><input type="radio" name="Câu 31" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 31" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Nếu bạn muốn biết gì đó, bạn thường tự tìm hiểu hơn là hỏi người khác ?</td>
+            <td align="center"><input type="radio" name="Câu 32" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 32" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Có bao giờ bạn thấy hồi hộp không ?</td>
+            <td align="center"><input type="radio" name="Câu 33" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 33" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có thích công việc đòi hỏi phải chú ý liên tục ?</td>
+            <td align="center"><input type="radio" name="Câu 34" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 34" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Cùng có lúc bạn run lên vì vui sướng hay sợ hãi ?</td>
+            <td align="center"><input type="radio" name="Câu 35" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 35" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn luôn trả cước phí đầy đủ mặc dù không bị kiểm soát ?</td>
+            <td align="center"><input type="radio" name="Câu 36" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 36" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn cảm thấy khó chịu ở nơi mà người ta hay trâm chọc nhau ?</td>
+            <td align="center"><input type="radio" name="Câu 37" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 37" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có dễ nổi nóng không ?</td>
+            <td align="center"><input type="radio" name="Câu 38" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 38" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có thích những công việc đòi hỏi hành động nhanh chóng ?</td>
+            <td align="center"><input type="radio" name="Câu 39" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 39" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có thầy hồi hộp khi những việc bất lợi có thể xảy ra ?</td>
+            <td align="center"><input type="radio" name="Câu 40" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 40" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn đi đứng chậm rãi và ung dung ?</td>
+            <td align="center"><input type="radio" name="Câu 41" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 41" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Đã có lúc bạn đến nơi có hẹn hoặc nơi làm việc muộn ?</td>
+            <td align="center"><input type="radio" name="Câu 42" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 42" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thường thấy những cơn ác mộng ?</td>
+            <td align="center"><input type="radio" name="Câu 43" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 43" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thích trò chuyện đến nỗi không bao giờ bỏ qua co hội nói chuyện với tất cả những người không quen biết ?</td>
+            <td align="center"><input type="radio" name="Câu 44" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 44" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn hay lo lắng vì đau chỗ nào đó ?</td>
+            <td align="center"><input type="radio" name="Câu 45" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 45" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn cảm thấy khổ sở khi lâu không được giao thiệp rộng rãi với mọi người ?</td>
+            <td align="center"><input type="radio" name="Câu 46" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 46" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn là người dễ cáu kỉnh ?</td>
+            <td align="center"><input type="radio" name="Câu 47" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 47" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Trong những người quen của mình có người bạn không thích ?</td>
+            <td align="center"><input type="radio" name="Câu 48" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 48" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn là người rất tự tin ?</td>
+            <td align="center"><input type="radio" name="Câu 49" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 49" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn là người dễ phật ý khi người khác chỉ ra khuyết điểm của bạn ?</td>
+            <td align="center"><input type="radio" name="Câu 50" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 50" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn nghĩ rằng khó có thể thực sự thỏa mãn trong cuộc liên hoan ?</td>
+            <td align="center"><input type="radio" name="Câu 51" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 51" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn cảm thấy không yên tâm khi thua kém bạn bè ở một điểm nào đó ?</td>
+            <td align="center"><input type="radio" name="Câu 52" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 52" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn dễ dàng mang lại sự vui vẻ trong một cuộc họp tẻ nhạt ?</td>
+            <td align="center"><input type="radio" name="Câu 53" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 53" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn thường hay nói về những vấn đề mà bạn chưa nắm chắc ?</td>
+            <td align="center"><input type="radio" name="Câu 54" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 54" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có lo lắng về sức khỏe của mình không ?</td>
+            <td align="center"><input type="radio" name="Câu 55" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 55" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có thích trêu đùa người khác ?</td>
+            <td align="center"><input type="radio" name="Câu 56" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 56" value="-1" required="required"></td>
+        </tr>
+  
+        <tr>
+            <td align="center">Bạn có bị mất ngủ không ?</td>
+            <td align="center"><input type="radio" name="Câu 57" value="1"></td>
+            <td align="center"><input type="radio" name="Câu 57" value="-1" required="required"></td>
+        </tr>
+    </table>
+  
+<br><br><button type="submit" id="submit-form">Gửi</button>
+    </form>
+    <div id="myModal" class="modal">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h4>Cảm ơn bạn đã tham gia bài test</h4>
+          </div>
+          <div class="modal-body">
+            <p>Nếu có ý kiến phản hồi hay đánh giá xin vui lòng bấm vào <a class="lm" href="rate.html">đây</a></p>
+            <p>Chúng tôi sẽ thu nhận phản hồi và sẽ sớm cải thiện trong tương lai</p>
+          </div>
+          <p></p>
+        </div>
+      
+      </div>
+      <script type="text/javascript">
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  </div>
+</body>
+</html>
